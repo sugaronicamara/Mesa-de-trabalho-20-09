@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Aula 13</title>
+</head>
+
+<body>
+  <main class="container">
+    <section>
+      <img src="./img/ZIMBRO_Layout_900x900_001-JPG-02.jpg"
+        alt="Logo da Zimbro">
+      <h2>Escolha seu próximo destino!</h2>
+    </section>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+      <label for="nome">Nome: </label>
+      <input type="text" name="nome" id="nome" placeholder="Nome completo"> 
+      <label for="endereço">Endereço: </label>
+      <textarea name="endereço" id="endereço" cols="22" rows="5"></textarea>
+    </fieldset>
+
+      <fieldset>
+      <label for="qutdade de pessoas">Quantidade e idade das pessoas:</label>
+      <textarea name="Quantidade e idade das pessoas" id="dadospax" cols="22" rows="10"></textarea>
+    </fieldset>
+
+      <fieldset>
+      <select name="destino" id="destino">
+        <option value="" hidden selected disabled>Sekecione uma opção</option>
+        <option value="">Selecione seu destino</option>
+        <option value="abrolhos">Abrolhos</option>
+        <option value="salvador">Conheça Salvador com o Adailton</option>
+        <option value="aracaju">Aracajú</option>
+        <option value="bombinhas">Bombinhas</option>
+        <option value="rota do cangaco">Rota do Cangaço</option>
+        <option value="escapada em atibaia">Goiás é com o Vinicius</option>
+        <option value="Hamburguer do Tiago em Floripa">Hamburger do Tiago em Floripa</option>
+        <option value="matheus de oz">Mateus de Oz</option>
+        <option value="cidade maravilhosa">Cidade Maravilhosa</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Método de pagamento: </legend>
+      <div class="metodoPagamento">
+        <input type="radio" name="pagamento" id="dinheiro">
+        <label for="dinheiro">Dinheiro</label>
+        <input type="radio" name="pagamento" id="credito">
+        <label for="credito">Crédito</label>
+        <input type="radio" name="pagamento" id="debito">
+        <label for="debito">Débito</label>
+        <input type="radio" name="pagamento" id="pix" checked>
+        <label for="pix">PIX</label>
+      </div>
+    </fieldset>
+    
+      <button type="submit">Solicitar</button>
+      <button type="reset">Cancelar</button>
+    </form>
+  </main>
+</body>
+
+</html>
